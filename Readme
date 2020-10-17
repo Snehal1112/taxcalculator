@@ -1,0 +1,100 @@
+// Rules record.
+[
+  {
+    "year": 2018 ,
+    "slabs": [
+      {
+        "lower_bound": 0 ,
+        "upper_bound": 100000 ,
+        "tax_per": 0
+      } ,
+      {
+        "lower_bound": 100001 ,
+        "upper_bound": 500000 ,
+        "tax_per": 10
+      } ,
+      {
+        "lower_bound": 500001 ,
+        "upper_bound": 1000000 ,
+        "tax_per": 20
+      } ,
+      {
+        "lower_bound": 1000000 ,
+        "upper_bound": 0 ,
+        "tax_per": 30
+      }
+    ] ,
+    "gov_bonds_limit": 100000 ,
+    "cess": {
+      "limit": 500000 ,
+      "charge": 1
+    } ,
+    "senior_citizen": {
+      "age": 0 ,
+      "reduction": 0
+    }
+  } ,
+  {
+    "year": 2019 ,
+    "slabs": [
+      {
+        "lower_bound": 0 ,
+        "upper_bound": 100000 ,
+        "tax_per": 0
+      } ,
+      {
+        "lower_bound": 100001 ,
+        "upper_bound": 600000 ,
+        "tax_per": 10
+      } ,
+      {
+        "lower_bound": 600001 ,
+        "upper_bound": 1200000 ,
+        "tax_per": 20
+      } ,
+      {
+        "lower_bound": 1200001 ,
+        "upper_bound": 0 ,
+        "tax_per": 30
+      }
+    ] ,
+    "gov_bonds_limit": 150000 ,
+    "cess": {
+      "limit": 500000 ,
+      "charge": 2
+    } ,
+    "senior_citizen": {
+      "age": 60 ,
+      "reduction": 50000
+    }
+  } ,
+  {
+    "year": 2020 ,
+    "slabs": [
+      {
+        "lower_bound": 0 ,
+        "upper_bound": 100000 ,
+        "tax_per": 0
+      } ,
+      {
+        "lower_bound": 100001 ,
+        "upper_bound": 1000000 ,
+        "tax_per": 15
+      } ,
+      {
+        "lower_bound": 1000001 ,
+        "upper_bound": 0 ,
+        "tax_per": 25
+      }
+    ] ,
+    "gov_bonds_limit": 200000 ,
+    "cess": {
+      "limit": 500000 ,
+      "charge": 5
+    } ,
+    "senior_citizen": {
+      "age": 60 ,
+      "reduction": 75000
+    }
+  }
+]

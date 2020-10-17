@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  coderdb:
+    container_name: "coderLandDB"
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+    - ./dockervolume/data:/data/db
+
+  taxapi:
+      container_name: "coderLandServer"
+      build:
+        context: ./
+        dockerfile: ./app.Dockerfile
+      ports:
+      - 8773:8773
+      environment:
+        CODER_LISTEN : "0.0.0.0:8773"
+        CODER_DB_URI: "mongodb://coderLandDB:27017/?retryWrites=false"
+        DB_NAME: "coderland"
+      depends_on:
+        - coderdb
